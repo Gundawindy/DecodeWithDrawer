@@ -34,11 +34,25 @@ public class MainActivity extends AppCompatActivity {
         // Tie DrawerLayout events to the ActionBarToggle
         mDrawer.addDrawerListener(drawerToggle);
 
-        // TODO: 9/10/2016 Not sure if I need to delete any of these next two statements.
         // Find our drawer view
         nvDrawer = (NavigationView) findViewById(R.id.nvView);
         // Setup drawer view
         setupDrawerContent(nvDrawer);
+
+//        Setup to open on the first fragment, the LC
+        // Create a new fragment and specify the fragment to show onCreate
+        Fragment fragment = null;
+        Class fragmentClass;
+        fragmentClass = FirstFragment.class;
+        try {
+            fragment = (Fragment) fragmentClass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        // Insert the fragment by replacing any existing fragment
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
+
     }
 
     private ActionBarDrawerToggle setupDrawerToggle() {
