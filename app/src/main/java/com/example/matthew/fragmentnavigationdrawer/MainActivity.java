@@ -70,6 +70,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_third_fragment:
                 fragmentClass = ThirdFragment.class;
                 break;
+            case R.id.nav_fourth_fragment:
+                fragmentClass = FourthFragment.class;
+                break;
+            case R.id.nav_fifth_fragment:
+                fragmentClass = FifthFragment.class;
+                break;
             case R.id.nav_sub1_fragment:
                 fragmentClass = Sub1Fragment.class;
                 break;
