@@ -5,9 +5,8 @@
     tools:context="com.example.matthew.fragmentnavigationdrawer.FifthFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_fifth_fragment" />
-
+        android:layout_height="wrap_content"
+        android:src="@drawable/blank_plate"/>
 </FrameLayout>

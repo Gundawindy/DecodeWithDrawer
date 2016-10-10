@@ -9,5 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/hello_sub1_fragment" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="32sp"
+        android:text="I think I need to get rid of this view altogether and jut put a facebook instance." />
 
 </FrameLayout>

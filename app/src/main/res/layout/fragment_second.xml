@@ -5,9 +5,8 @@
     tools:context="com.example.matthew.fragmentnavigationdrawer.SecondFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_second_fragment" />
-
+        android:layout_height="wrap_content"
+        android:src="@drawable/lj_plate"/>
 </FrameLayout>
