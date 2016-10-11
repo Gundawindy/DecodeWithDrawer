@@ -72,6 +72,14 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
+    private void sendFeedbackEmail(){
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse(getString(R.string.mailto_command)+getString(R.string.developers_email_address)));
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject_line));
+        emailIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_body_text));
+        startActivity(Intent.createChooser(emailIntent, getString(R.string.title_displayed_in_email_chooser)));
+    }
+
     public void selectDrawerItem(MenuItem menuItem) {
         // Create a new fragment and specify the fragment to show based on nav item clicked
         Fragment fragment = null;
@@ -96,11 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass = Sub1Fragment.class;
                 break;
             case R.id.nav_sub2_fragment:
-                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                emailIntent.setData(Uri.parse(getString(R.string.mailto_command)+getString(R.string.developers_email_address)));
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject_line));
-                emailIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_body_text));
-                startActivity(Intent.createChooser(emailIntent, getString(R.string.title_displayed_in_email_chooser)));
+                sendFeedbackEmail();
                 fragmentClass = Sub2Fragment.class;
                 break;
             default:
