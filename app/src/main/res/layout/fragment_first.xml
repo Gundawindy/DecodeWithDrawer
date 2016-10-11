@@ -1,12 +1,111 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.matthew.fragmentnavigationdrawer.FirstFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/lc_plate"/>
-</FrameLayout>
+        android:src="@drawable/lc_plate"
+        android:contentDescription="@string/lc_body_id_plate_description"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        />
+
+    <Spinner
+        android:id="@+id/lc_model_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="160dp"
+        android:entries="@array/lc_model_list"
+        android:prompt="@string/lc_model_spinner_prompt"
+        android:clipToPadding="false"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:popupBackground="@android:drawable/editbox_dropdown_dark_frame"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:scaleX="1.4"
+        android:scaleY="1.1"
+        android:textAlignment="center"
+        android:hapticFeedbackEnabled="true"
+        />
+
+    <EditText
+        android:id="@+id/lc_body_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_marginStart="170dp"
+        android:inputType="textCapCharacters|textAutoCorrect"
+        android:hint="@string/lc_body_no_hint"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:hapticFeedbackEnabled="true"
+        android:lines="1"
+        android:minWidth="80dp"
+        android:scaleX="1.4"
+        android:scaleY="1.1"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:maxLines="1"
+        />
+
+    <Spinner
+        android:id="@+id/lc_trim_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="150dp"
+        android:minWidth="96dp"
+        android:entries="@array/lc_trim_list"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:popupBackground="@android:drawable/editbox_dropdown_dark_frame"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:scaleX="1.4"
+        android:scaleY="1.1"
+        android:textAlignment="center"
+        android:hapticFeedbackEnabled="true"
+        />
+
+    <Spinner
+        android:id="@+id/lc_paint_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="150dp"
+        android:minWidth="96dp"
+        android:entries="@array/lc_paint_list"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:popupBackground="@android:drawable/editbox_dropdown_dark_frame"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:scaleX="1.4"
+        android:scaleY="1.1"
+        android:textAlignment="center"
+        android:hapticFeedbackEnabled="true"
+        />
+
+    <Spinner
+        android:id="@+id/lc_top_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:minWidth="96dp"
+        android:entries="@array/lc_top_list"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:popupBackground="@android:drawable/editbox_dropdown_dark_frame"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:scaleX="1.4"
+        android:scaleY="1.1"
+        android:textAlignment="center"
+        android:hapticFeedbackEnabled="true" />
+
+</RelativeLayout>

@@ -26,5 +26,39 @@
     <!-- Sub Menu item text -->
     <string name="sub_menu_item1">Share Results</string>
     <string name="sub_menu_item2">Report Error</string>
+    <string name="lc_model_input">LC82911M</string>
+    <string name="lc_body_id_plate_description">Example picture of an LC Body ID plate</string>
+
+    <!--LC Model input Spinner-->
+    <string name="lc_model_spinner_prompt">LC82911M</string>
+    <string-array name="lc_model_list">
+        <item>LC82911</item>
+        <item>LC82911M</item>
+        <item>LC82311</item>
+        <item>LC82311M</item>
+    </string-array>
+
+    <!--LC Trim input Spinner-->
+    <string name="lc_trim_spinner_prompt">LC82911M</string>
+    <string-array name="lc_trim_list">
+        <item>1842 -40X</item>
+        <item>1842 -40Y</item>
+    </string-array>
+
+    <!--LC Paint input Spinner-->
+    <string name="lc_paint_spinner_prompt">LC82911M</string>
+    <string-array name="lc_paint_list">
+        <item>567-13137</item>
+        <item>567-13138</item>
+    </string-array>
+
+    <!--LC Top (roof) input Spinner-->
+    <string name="lc_top_spinner_prompt">LC82911M</string>
+    <string name="lc_body_no_hint">02919B</string>
+    <string-array name="lc_top_list">
+        <item></item>
+        <item>567-13137</item>
+        <item>567-13138</item>
+    </string-array>
 
 </resources>

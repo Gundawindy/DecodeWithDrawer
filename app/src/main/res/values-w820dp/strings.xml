@@ -26,5 +26,80 @@
     <!-- Sub Menu item text -->
     <string name="sub_menu_item1">Share Results</string>
     <string name="sub_menu_item2">Report Error</string>
+    <string name="lc_model_input">LC82911M</string>
+    <string name="lc_body_id_plate_description">Example picture of an LC Body ID plate</string>
+
+    <!--LC Model input Spinner-->
+    <string name="lc_model_spinner_prompt">LC82911M</string>
+    <string-array name="lc_model_list">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+    <!--LC Trim input Spinner-->
+    <string name="lc_trim_spinner_prompt">LC82911M</string>
+    <string-array name="lc_trim_list">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+    <!--LC Paint input Spinner-->
+    <string name="lc_paint_spinner_prompt">LC82911M</string>
+    <string name="lc_body_no_hint">02919B</string>
+    <string-array name="lc_paint_list">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
 
 </resources>
