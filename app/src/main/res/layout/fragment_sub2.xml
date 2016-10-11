@@ -4,15 +4,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.matthew.fragmentnavigationdrawer.Sub2Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_sub2_fragment" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="32sp"
-        android:text="I think I need to get rid of this view altogether and just put an email instance" />
+        android:textSize="@dimen/feedback_text_size"
+        android:text="@string/feedback_message" />
 
 </FrameLayout>

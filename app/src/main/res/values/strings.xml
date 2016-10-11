@@ -25,11 +25,19 @@
     <string name="sub_menu_heading">Communication</string>
     <!-- Sub Menu item text -->
     <string name="sub_menu_item1">Share Results</string>
-    <string name="sub_menu_item2">Report Error</string>
+    <string name="sub_menu_item2">Report Error/Provide Feedback</string>
     <string name="lc_model_input">LC82911M</string>
     <string name="lc_body_id_plate_description">Example picture of an LC Body ID plate</string>
 
-<!--LC Model input Spinner-->
+    <!-- Email intent strings-->
+    <string name="mailto_command">"mailto: "</string>
+    <string name="developers_email_address">gundawindy@gmail.com</string>
+    <string name="email_subject_line">Feedback for Body Plate Decoder app.</string>
+    <string name="email_body_text" />
+    <string name="title_displayed_in_email_chooser">Send feedback</string>
+    <string name="feedback_message">Thank you for your constructive criticism and improvement ideas.\nWith your feedback, hopefully I can make the app even better.</string>
+
+    <!--LC Model input Spinner-->
     <string name="lc_model_spinner_prompt">LC82911M</string>
     <string-array name="lc_model_list">
         <item>Malaysia</item>

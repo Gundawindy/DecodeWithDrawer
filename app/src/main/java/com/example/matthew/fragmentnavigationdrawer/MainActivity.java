@@ -1,6 +1,8 @@
 package com.example.matthew.fragmentnavigationdrawer;
 
+import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -94,6 +96,11 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass = Sub1Fragment.class;
                 break;
             case R.id.nav_sub2_fragment:
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                emailIntent.setData(Uri.parse(getString(R.string.mailto_command)+getString(R.string.developers_email_address)));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject_line));
+                emailIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_body_text));
+                startActivity(Intent.createChooser(emailIntent, getString(R.string.title_displayed_in_email_chooser)));
                 fragmentClass = Sub2Fragment.class;
                 break;
             default:
