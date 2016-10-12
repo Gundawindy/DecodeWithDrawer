@@ -63,6 +63,7 @@
     <!--LC Top (roof) input Spinner-->
     <string name="lc_top_spinner_prompt">LC82911M</string>
     <string name="lc_body_no_hint">02919B</string>
+    <string name="social_media_share_text">I hope the results help someone.</string>
     <string-array name="lc_top_list">
         <item></item>
         <item>567-13137</item>
