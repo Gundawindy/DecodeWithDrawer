@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- todo   Need to arrange all these strings and the other two string resource files into some kind of order.-->
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-
     <string name="app_name">Fragment Navigation Drawer</string>
+    <string name="search_button_text">Search Plate</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_first_fragment">Hello first fragment</string>
@@ -13,6 +14,7 @@
     <string name="hello_fifth_fragment">Hello fifth fragment</string>
     <string name="hello_sub1_fragment">Hello sub1 fragment</string>
     <string name="hello_sub2_fragment">Hello sub2 fragment</string>
+    <string name="hello_result_fragment">Hello Result fragment</string>
     <!-- Navigation drawer Header Text -->
     <string name="nav_drawer_header">Select Model</string>
     <!-- MAin Menu item text. -->
@@ -109,9 +111,6 @@
         <item>New Zealand</item>
         <item>India</item>
     </string-array>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

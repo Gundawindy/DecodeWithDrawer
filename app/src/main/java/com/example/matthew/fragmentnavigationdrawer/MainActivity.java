@@ -16,13 +16,20 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
 
 import static android.R.attr.bitmap;
+import static android.R.attr.data;
+import static android.R.attr.fragment;
 import static android.R.attr.id;
 import static com.example.matthew.fragmentnavigationdrawer.R.id.flContent;
+import static com.example.matthew.fragmentnavigationdrawer.R.id.result_text;
 import static java.security.AccessController.getContext;
 
 
@@ -130,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
     }
 // *****************************************************************************
 
-//  This method creates the implied intent that comnverts the bitmap to a .png and shares it.
+//  This method creates the implied intent that converts the bitmap to a .png and shares it.
     private void shareBitmap (Bitmap bitmap,String fileName) {
         try {
             File file = new File(this.getCacheDir(), fileName + ".png");
@@ -237,4 +244,40 @@ public class MainActivity extends AppCompatActivity {
         drawerToggle.onConfigurationChanged(newConfig);
     }
 // *******************************************************************************
+
+// This method is to search for the plate. Hopefully it's in the right place.
+    public void searchPlate(View view){
+        Fragment fragment = null;
+        Class fragmentClass;
+// TODO: 12/10/2016 get all the info from the spinners then lookup what they translate into. Build into a string variable and pass it to the result intent
+        Spinner spinner = (Spinner)findViewById(R.id.lc_model_spinner);
+        String mModelText = spinner.getSelectedItem().toString();
+        EditText edit = (EditText)findViewById(R.id.lc_body_editText);
+        String mBodyText = edit.getText().toString();
+        spinner = (Spinner)findViewById(R.id.lc_trim_spinner);
+        String mTrimText = spinner.getSelectedItem().toString();
+        spinner = (Spinner)findViewById(R.id.lc_paint_spinner);
+        String mPaintText = spinner.getSelectedItem().toString();
+        spinner = (Spinner)findViewById(R.id.lc_top_spinner);
+        String mTopText = spinner.getSelectedItem().toString();
+        // TODO: 12/10/2016 build this with a StringBuilder instead.
+        String mresultText = "Model: " + mModelText + "\nBody No: " + mBodyText + "\nTrim: "
+                + mTrimText + "\nPaint: " + mPaintText + "\nTop: " + mTopText;
+        // TODO: 12/10/2016 Output to TextView @+id/result_text in fragment_result.xml
+        Toast.makeText(this, mresultText, Toast.LENGTH_LONG).show();
+        fragmentClass = ResultFragment.class;
+        try {
+            fragment = (Fragment) fragmentClass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        // Insert the fragment by replacing any existing fragment
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(flContent, fragment).commit();
+//        TextView resultText = (TextView) findViewById(R.id.result_text);
+//        resultText.setText(mresultText);
+        // TODO: 12/10/2016 setup method to decode the results. Just populate it with the few options in the spinners.
+    }
+// *****************************************************************************************
+
 }

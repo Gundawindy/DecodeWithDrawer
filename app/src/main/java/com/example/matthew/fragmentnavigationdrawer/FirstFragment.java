@@ -8,8 +8,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.EditText;
+import android.widget.Spinner;
 
 import static android.R.attr.id;
+
+
+
+
+
+
 
 
 /**
@@ -67,5 +75,6 @@ public class FirstFragment extends Fragment {
         getActivity().setTitle("LC Torana");
         return inflater.inflate(R.layout.fragment_first, container, false);
     }
+
 
 }

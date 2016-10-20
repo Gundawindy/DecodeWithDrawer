@@ -108,4 +108,19 @@
         android:textAlignment="center"
         android:hapticFeedbackEnabled="true" />
 
+    <Button
+        android:id="@+id/result1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lc_top_spinner"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:text="@string/search_button_text"
+        android:backgroundTint="@color/colorPrimaryText"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="searchPlate"
+        />
+
 </RelativeLayout>
